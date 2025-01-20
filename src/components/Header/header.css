@@ -1,0 +1,84 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  transition: all 0.3s;
+  z-index: 1000;
+  padding: 15px 40px;
+  box-sizing: border-box;
+}
+
+.headerScrolled {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #113229;
+}
+
+header .container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .link {
+  margin-right: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header .linkScrolled {
+  color: #113229;
+}
+
+header .btnHader {
+  display: flex;
+  align-items: center;
+}
+
+header .btn-default {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  margin-right: 20px;
+  font-weight: 450;
+  font-family: inherit;
+  font-size: 15px;
+  color: #113229;
+}
+
+header .subscribeBtn {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  margin-right: 20px;
+  font-weight: 450;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+header .subscribeBtnScrolled {
+  background-color: #f0c04a;
+}
+
+header .logoAccount {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+header .logoAccountScrolled {
+  background-color: #113229;
+}
