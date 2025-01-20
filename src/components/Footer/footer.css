@@ -1,0 +1,90 @@
+footer {
+  background-color: #113229;
+  color: white;
+  padding: 40px 80px;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "logoMotto aProposDeMotto notreService aide mentionsLegales"
+    ". serviceClient . . nousSuivre";
+  gap: 50px;
+}
+
+footer .logoMotto {
+  grid-area: logoMotto;
+}
+
+footer .aProposDeMotto {
+  grid-area: aProposDeMotto;
+}
+
+footer .notreService {
+  grid-area: notreService;
+}
+
+footer .aide {
+  grid-area: aide;
+}
+
+footer .mentionsLegales {
+  grid-area: mentionsLegales;
+}
+
+footer .serviceClient {
+  grid-area: serviceClient;
+}
+
+footer .nousSuivre {
+  grid-area: nousSuivre;
+}
+
+footer .link {
+  color: white;
+  text-decoration: none;
+}
+
+footer span:hover {
+  text-decoration: underline;
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+}
+
+footer h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+footer p,
+footer a {
+  font-size: 14px;
+}
+
+.logoInstagram {
+  width: 15px;
+  margin-right: 5px;
+}
+.logoLinkedin {
+  width: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.logoFacebook {
+  width: 15px;
+  margin-left: 5px;
+}
+
+.socialNetworks {
+  display: flex;
+  align-items: center;
+}
+
+.nousSuivre p {
+  margin-top: 5px;
+}
