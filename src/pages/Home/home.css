@@ -1,0 +1,96 @@
+.homeStart {
+  position: relative;
+}
+
+video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.homeTitle {
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.homeTitle p {
+  color: white;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.homeTitle button {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 450;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #f0c04a;
+  margin-top: 20px;
+}
+
+.orderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orderContainer h2 {
+  font-size: 50px;
+  font-weight: 400;
+  color: #113229;
+}
+
+.orderFlex {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.orderContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.number {
+  width: 35px;
+}
+
+.orderContent h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #27705d;
+  margin: 15px 0;
+}
+
+.orderContent p {
+  margin: 0;
+  color: #103228;
+}
+
+.orderContainer button {
+  background-color: #113229;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 450;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 50px 0;
+}
