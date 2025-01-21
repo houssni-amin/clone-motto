@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import Discover from "../../components/Discover"
+import Rating from "../../components/Ratings/index"
 import bikes from "../../data/bikes.json"
+import ratings from "../../data/ratings.json"
 import un from "../../assets/un.svg"
 import deux from "../../assets/deux.svg"
 import trois from "../../assets/trois.svg"
@@ -171,6 +173,17 @@ export default function Home() {
           votre vélo à un tarif préférentiel.
         </p>
         <button>JE M'ABONNE</button>
+      </div>
+
+      <div className="ratingsContainer">
+        <h2>
+          NOS UTILISATEURS <br /> LE DISENT MIEUX QUE NOUS
+        </h2>
+        <div className="ratingsContent">
+          {ratings.map((rating, id) => (
+            <Rating key={id} name={rating.name} text={rating.text} />
+          ))}
+        </div>
       </div>
     </main>
   )
