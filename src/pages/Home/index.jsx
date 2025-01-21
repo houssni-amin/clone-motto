@@ -60,8 +60,23 @@ export default function Home() {
             <p>Récupérer votre vélo sous 72h et profitez</p>
           </div>
         </div>
-
         <button>JE M'ABONNE</button>
+      </div>
+
+      <div className="discoverContainer">
+        <h3>
+          DÉCOUVREZ NOS <br /> VÉLOS ÉLECTRIQUE{" "}
+        </h3>
+        <div className="homeBikes">
+          {bikes.map((bike) => (
+            <Discover
+              key={bike.id}
+              image={bike.picture}
+              name={bike.name}
+              text={bike.text}
+            />
+          ))}
+        </div>
       </div>
     </main>
   )

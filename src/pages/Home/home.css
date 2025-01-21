@@ -94,3 +94,7 @@ h1 {
   cursor: pointer;
   margin: 50px 0;
 }
+
+.homeBikes {
+  display: flex;
+}
