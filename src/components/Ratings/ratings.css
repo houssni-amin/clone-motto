@@ -1,0 +1,22 @@
+.ratingContainer {
+  display: flex;
+  flex-direction: column;
+  width: 22.5%;
+  padding: 0 15px 15px 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.ratingContainerTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textRating {
+  margin-bottom: 0;
+}
+
+.star,
+.logoGoogle {
+  width: 15px;
+}
