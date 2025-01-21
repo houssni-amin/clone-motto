@@ -172,3 +172,73 @@ h1 {
 .next {
   right: 10px;
 }
+
+.squareContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.topSquare {
+  display: flex;
+  height: 50vh;
+}
+
+.bottomSquare {
+  display: flex;
+  height: 50vh;
+}
+
+.topSquare img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.bottomSquare img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.topLeftSquare {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #113229;
+  padding: 50px;
+  color: white;
+}
+
+.bottomRightSquare {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #16614d;
+  padding: 50px;
+  color: white;
+}
+
+.topLeftSquare h2,
+.bottomRightSquare h2 {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.topLeftSquare p,
+.bottomRightSquare p {
+  margin: 50px 0;
+}
+
+.topLeftSquare button,
+.bottomRightSquare button {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 450;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: #113229;
+  width: 145px;
+  text-align: center;
+}

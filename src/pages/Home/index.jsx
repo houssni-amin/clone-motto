@@ -4,6 +4,8 @@ import bikes from "../../data/bikes.json"
 import un from "../../assets/un.svg"
 import deux from "../../assets/deux.svg"
 import trois from "../../assets/trois.svg"
+import topRight from "../../assets/topRight.avif"
+import bottomLeft from "../../assets/bottomLeft.avif"
 import "./home.css"
 
 export default function Home() {
@@ -130,6 +132,33 @@ export default function Home() {
             Vérifiez votre éligibilité auprès de votre employeur
           </p>
           <button>DÉCOUVRIR NOS VÉLOS</button>
+        </div>
+      </div>
+
+      <div className="squareContainer">
+        <div className="topSquare">
+          <div className="topLeftSquare">
+            <h2>VOTRE ABONNEMENT SUR MESURE</h2>
+            <p>
+              La liberté est entre vos mains : avec ou sans engagement.
+              Choisissez une formule qui vous convient et profitez de tout ce
+              dont vous avez besoin pour rouler.
+            </p>
+            <button>JE M'ABONNE</button>
+          </div>
+          <img src={topRight} alt="Vélos" />
+        </div>
+
+        <div className="bottomSquare">
+          <img src={bottomLeft} alt="Vélos" />
+          <div className="bottomRightSquare">
+            <h2>FINANCÉ À 80% PAR VOTRE EMPLOYEUR</h2>
+            <p>
+              Vous pouvez bénéficier d'une enveloppe allant jusqu'à 800 euros
+              par an pour financer votre abonnement Motto par votre employeur.
+            </p>
+            <button>JE M'ABONNE</button>
+          </div>
         </div>
       </div>
     </main>
