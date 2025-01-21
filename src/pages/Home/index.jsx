@@ -6,6 +6,7 @@ import deux from "../../assets/deux.svg"
 import trois from "../../assets/trois.svg"
 import topRight from "../../assets/topRight.avif"
 import bottomLeft from "../../assets/bottomLeft.avif"
+import hands from "../../assets/hands.svg"
 import "./home.css"
 
 export default function Home() {
@@ -160,6 +161,16 @@ export default function Home() {
             <button>JE M'ABONNE</button>
           </div>
         </div>
+      </div>
+
+      <div className="handsContainer">
+        <img src={hands} alt="Mains" />
+        <h2>UNE OPTION DE RACHAT RIEN QUE POUR VOUS</h2>
+        <p>
+          À la fin de chaque engagement vous aurez la possibilité de racheter
+          votre vélo à un tarif préférentiel.
+        </p>
+        <button>JE M'ABONNE</button>
       </div>
     </main>
   )
