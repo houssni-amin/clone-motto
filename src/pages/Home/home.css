@@ -95,6 +95,38 @@ h1 {
   margin: 50px 0;
 }
 
+.discoverContainer h3 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: #113229;
+  margin-bottom: -100px;
+}
+
+.discoverText {
+  text-align: center;
+  color: #113229;
+  margin-top: -100px;
+}
+
+.discoverText span {
+  font-weight: 700;
+}
+
+.discoverText button {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 450;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  background-color: #113229;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
 .carouselContainer {
   display: flex;
   align-items: center;

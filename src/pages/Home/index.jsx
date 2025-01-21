@@ -122,6 +122,15 @@ export default function Home() {
             {">"}
           </button>
         </div>
+        <div className="discoverText">
+          <p>
+            Le tout à partir de 60€/mois ou <br />
+            <span>0€/mois avec le forfait mobilité durable.</span>
+            <br />
+            Vérifiez votre éligibilité auprès de votre employeur
+          </p>
+          <button>DÉCOUVRIR NOS VÉLOS</button>
+        </div>
       </div>
     </main>
   )
