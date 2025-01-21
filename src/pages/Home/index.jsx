@@ -1,12 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 import Discover from "../../components/Discover"
 import bikes from "../../data/bikes.json"
-import "./home.css"
 import un from "../../assets/un.svg"
 import deux from "../../assets/deux.svg"
 import trois from "../../assets/trois.svg"
+import "./home.css"
 
 export default function Home() {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const nextBike = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % bikes.length)
+  }
+
+  const previousBike = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? bikes.length - 1 : prevIndex - 1
+    )
+  }
+
   return (
     <main>
       <div className="homeStart">
@@ -22,10 +34,11 @@ export default function Home() {
             <br />
             EN ABONNEMENT
           </h1>
-          <p>À partir de 60€/mois </p>
+          <p>À partir de 60€/mois</p>
           <button>DÉCOUVRIR NOS OFFRES</button>
         </div>
       </div>
+
       <div className="orderContainer">
         <h2>LA MEILLEURE MANIÈRE DE SE DEPLACER EN VILLE.</h2>
         <div className="orderFlex">
@@ -36,7 +49,6 @@ export default function Home() {
               <br />
               ÉLECTRIQUE
             </h3>
-
             <p>Parmi tous nos modèles disponibles</p>
           </div>
           <div className="orderContent">
@@ -46,7 +58,6 @@ export default function Home() {
               <br />
               ABONNEMENT
             </h3>
-
             <p>Assurance vol, traceur GPS, réparations à domicile...</p>
           </div>
           <div className="orderContent">
@@ -56,26 +67,60 @@ export default function Home() {
               <br />
               SOUS 72H
             </h3>
-
             <p>Récupérer votre vélo sous 72h et profitez</p>
           </div>
         </div>
+
         <button>JE M'ABONNE</button>
       </div>
 
       <div className="discoverContainer">
         <h3>
-          DÉCOUVREZ NOS <br /> VÉLOS ÉLECTRIQUE{" "}
+          DÉCOUVREZ NOS <br /> VÉLOS ÉLECTRIQUES
         </h3>
-        <div className="homeBikes">
-          {bikes.map((bike) => (
-            <Discover
-              key={bike.id}
-              image={bike.picture}
-              name={bike.name}
-              text={bike.text}
-            />
-          ))}
+
+        <div className="carouselContainer">
+          <button className="carouselButton prev" onClick={previousBike}>
+            {"<"}
+          </button>
+
+          <div className="carousel">
+            <div className="carouselItem prevItem">
+              <Discover
+                key={bikes[(currentIndex - 1 + bikes.length) % bikes.length].id}
+                image={
+                  bikes[(currentIndex - 1 + bikes.length) % bikes.length]
+                    .picture
+                }
+                name={
+                  bikes[(currentIndex - 1 + bikes.length) % bikes.length].name
+                }
+                text={
+                  bikes[(currentIndex - 1 + bikes.length) % bikes.length].text
+                }
+              />
+            </div>
+            <div className="carouselItem centerItem">
+              <Discover
+                key={bikes[currentIndex].id}
+                image={bikes[currentIndex].picture}
+                name={bikes[currentIndex].name}
+                text={bikes[currentIndex].text}
+              />
+            </div>
+            <div className="carouselItem nextItem">
+              <Discover
+                key={bikes[(currentIndex + 1) % bikes.length].id}
+                image={bikes[(currentIndex + 1) % bikes.length].picture}
+                name={bikes[(currentIndex + 1) % bikes.length].name}
+                text={bikes[(currentIndex + 1) % bikes.length].text}
+              />
+            </div>
+          </div>
+
+          <button className="carouselButton next" onClick={nextBike}>
+            {">"}
+          </button>
         </div>
       </div>
     </main>

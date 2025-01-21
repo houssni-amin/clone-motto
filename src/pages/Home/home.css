@@ -95,6 +95,48 @@ h1 {
   margin: 50px 0;
 }
 
-.homeBikes {
+.carouselContainer {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carouselItem {
+  transition: transform 5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  text-align: center;
+  width: 45%;
+}
+
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(100, 100, 100, 0.5);
+  color: black;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  z-index: 10;
+  width: 70px;
+  height: 70px;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
