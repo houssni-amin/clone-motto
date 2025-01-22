@@ -153,8 +153,8 @@ h1 {
 .carouselButton {
   position: absolute;
   top: 50%;
-  background-color: rgba(100, 100, 100, 0.5);
-  color: black;
+  background-color: rgba(100, 100, 100, 0.9);
+  color: white;
   font-size: 50px;
   border: none;
   cursor: pointer;
