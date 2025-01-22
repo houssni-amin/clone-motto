@@ -1,4 +1,9 @@
 import React, { useState } from "react"
+import Header from "../../components/Header"
+import blackLogo from "../../assets/darkLogo.svg"
+import whiteLogo from "../../assets/clearLogo.svg"
+import whiteAccount from "../../assets/clearAccount.svg"
+import blackAccount from "../../assets/darkAccount.svg"
 import Discover from "../../components/Discover"
 import Rating from "../../components/Ratings/index"
 import bikes from "../../data/bikes.json"
@@ -26,6 +31,20 @@ export default function Home() {
 
   return (
     <main>
+      <Header
+        backgroundHeaderDefault={"transparent"}
+        backgroundHeaderScroll={"white"}
+        linkColorDefault={"white"}
+        linkColorScoll={"#113229"}
+        logoMottodefault={whiteLogo}
+        logoMottoScroll={blackLogo}
+        subscribeBtnDefault={"white"}
+        subscribeBtnScroll={"#f0c04a"}
+        backgroundAccountDefault={"white"}
+        backgroundAccountScroll={"#113229"}
+        logoAccountDefault={blackAccount}
+        logoAccountScroll={whiteAccount}
+      />
       <div className="homeStart">
         <video
           autoPlay
