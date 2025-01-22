@@ -1,0 +1,160 @@
+.servicesContainer {
+  margin-top: 10vh;
+}
+
+.firstServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstServices h1 {
+  color: #103228;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.firstServices p {
+  color: #103228;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.firstServices button {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #16614d;
+  color: white;
+  margin-top: 25px;
+}
+.firstServices img {
+  width: 60%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.secondServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.secondServices h2 {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  color: #103228;
+  margin: 0;
+}
+.secondServices p {
+  color: #103228;
+  font-weight: 400;
+}
+.modelsContainer {
+  display: flex;
+  justify-content: center;
+}
+.model {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  width: 25%;
+  text-align: center;
+}
+
+.model img {
+  width: 40px;
+}
+.model h3 {
+  color: #15614e;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.secondServices button {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #103228;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.squareContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.topSquare {
+  display: flex;
+  height: 50vh;
+}
+
+.bottomSquare {
+  display: flex;
+  height: 50vh;
+}
+
+.topSquare img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.bottomSquare img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.topLeftSquare {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #113229;
+  padding: 50px;
+  color: white;
+}
+
+.bottomRightSquare {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #16614d;
+  padding: 50px;
+  color: white;
+}
+
+.topLeftSquare h2,
+.bottomRightSquare h2 {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.topLeftSquare p,
+.bottomRightSquare p {
+  margin: 50px 0;
+}
+
+.topLeftSquare button,
+.bottomRightSquare button {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 450;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: #113229;
+  width: 145px;
+}
