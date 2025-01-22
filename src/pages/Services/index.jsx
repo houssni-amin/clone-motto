@@ -6,6 +6,8 @@ import bikeTop from "../../assets/bikeTop.avif"
 import modelLeft from "../../assets/modelLeft.svg"
 import modelCenter from "../../assets/modelCenter.svg"
 import modelRight from "../../assets/modelRight.svg"
+import servicestopRight from "../../assets/servicesTopRight.avif"
+import servicesBottomLeft from "../../assets/servicesBottomLeft.avif"
 
 export default function Services() {
   return (
@@ -76,6 +78,33 @@ export default function Services() {
           </div>
         </div>
         <button>COMPARER NOS OFFRES</button>
+      </div>
+
+      <div className="squareContainer">
+        <div className="topSquare">
+          <div className="topLeftSquare">
+            <h2>UN ABONNEMENT POUR CHACUN</h2>
+            <p>
+              La liberté est entre vos mains : avec ou sans engagement.
+              Choisissez une formule qui vous convient et profitez de tout ce
+              dont vous avez besoin pour rouler.
+            </p>
+            <button>JE M'ABONNE</button>
+          </div>
+          <img src={servicestopRight} alt="Vélos" />
+        </div>
+
+        <div className="bottomSquare">
+          <img src={servicesBottomLeft} alt="Vélos" />
+          <div className="bottomRightSquare">
+            <h2>FINANCÉ À 80% PAR VOTRE EMPLOYEUR</h2>
+            <p>
+              Vous pouvez bénéficier d'une enveloppe allant jusqu'à 800 euros
+              par an pour financer votre abonnement Motto par votre employeur.
+            </p>
+            <button>JE M'ABONNE</button>
+          </div>
+        </div>
       </div>
     </main>
   )
