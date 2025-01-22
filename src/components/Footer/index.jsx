@@ -12,19 +12,19 @@ export default function Footer() {
         <img src={clearLogo} alt="Logo Motto" className="logoMotto" />
         <div className="aProposDeMotto content">
           <h3>À propos de Motto</h3>
-          <a className="link" href="/">
+          <a className="link" href="/" onClick={(e) => e.preventDefault()}>
             <span>À propos</span>
           </a>
-          <a className="link" href="/">
+          <a className="link" href="/" onClick={(e) => e.preventDefault()}>
             <span>On recrute</span>
           </a>
-          <a className="link" href="/">
+          <a className="link" href="/" onClick={(e) => e.preventDefault()}>
             <span>Blog</span>
           </a>
-          <a className="link" href="/">
+          <a className="link" href="/" onClick={(e) => e.preventDefault()}>
             <span>Carte cadeau 🎁</span>
           </a>
-          <a className="link" href="/">
+          <a className="link" href="/" onClick={(e) => e.preventDefault()}>
             <span>Boutique en ligne</span>
           </a>
         </div>
@@ -34,25 +34,25 @@ export default function Footer() {
         </div>
         <div className="notreService content">
           <h3>Notre service</h3>
-          <a className="link" href="/">
+          <a className="link" href="/" onClick={(e) => e.preventDefault()}>
             <span>Nos Vélos</span>
           </a>
-          <a className="link" href="/">
+          <a className="link" href="/" onClick={(e) => e.preventDefault()}>
             <span>Nos offres</span>
           </a>
         </div>
         <div className="aide content">
           <h3>Aide</h3>
-          <a className="link" href="/">
+          <a className="link" href="/" onClick={(e) => e.preventDefault()}>
             <span>FAQ</span>
           </a>
         </div>
         <div className="mentionsLegale content">
           <h3>Mention légales</h3>
-          <a className="link" href="/">
+          <a className="link" href="/" onClick={(e) => e.preventDefault()}>
             <span>Conditions générales</span>
           </a>
-          <a className="link" href="/">
+          <a className="link" href="/" onClick={(e) => e.preventDefault()}>
             <span>Politique de confidentialité</span>
           </a>
         </div>

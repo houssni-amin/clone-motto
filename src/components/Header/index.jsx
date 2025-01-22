@@ -22,20 +22,31 @@ export default function Header() {
       <div className="container">
         <img src={isScrolled ? blackLogo : whiteLogo} alt="Logo Motto" />
         <div>
-          <a className={`link ${isScrolled ? "linkScrolled" : ""}`} href="/">
+          <a
+            className={`link ${isScrolled ? "linkScrolled" : ""}`}
+            href="/"
+            onClick={(e) => e.preventDefault()}
+          >
             SERVICES
           </a>
-          <a className={`link ${isScrolled ? "linkScrolled" : ""}`} href="/">
+          <a
+            className={`link ${isScrolled ? "linkScrolled" : ""}`}
+            href="/"
+            onClick={(e) => e.preventDefault()}
+          >
             E-BIKES
           </a>
-          <a className={`link ${isScrolled ? "linkScrolled" : ""}`} href="/">
+          <a
+            className={`link ${isScrolled ? "linkScrolled" : ""}`}
+            href="/"
+            onClick={(e) => e.preventDefault()}
+          >
             À PROPOS
           </a>
           <a
             className={`link ${isScrolled ? "linkScrolled" : ""}`}
-            href="https://blog.ridemotto.com/"
-            target="_blank"
-            rel="noreferrer"
+            href="/"
+            onClick={(e) => e.preventDefault()}
           >
             BLOG
           </a>
