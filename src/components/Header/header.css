@@ -3,17 +3,16 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: transparent;
   box-shadow: none;
   transition: all 0.3s;
   z-index: 1000;
   padding: 15px 40px;
   box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .headerScrolled {
-  background-color: white;
-  color: #113229;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header .container {
@@ -36,10 +35,6 @@ header a:hover {
   text-decoration: underline;
 }
 
-header .linkScrolled {
-  color: #113229;
-}
-
 header .btnHader {
   display: flex;
   align-items: center;
@@ -59,7 +54,7 @@ header .btn-default {
 header .subscribeBtn {
   padding: 10px 25px;
   border-radius: 30px;
-  border: none;
+  border: solid 1px rgb(229, 229, 229);
   margin-right: 20px;
   font-weight: 450;
   font-family: inherit;
@@ -67,17 +62,8 @@ header .subscribeBtn {
   cursor: pointer;
 }
 
-header .subscribeBtnScrolled {
-  background-color: #f0c04a;
-}
-
 header .logoAccount {
-  background-color: white;
   padding: 10px;
   border-radius: 50px;
   cursor: pointer;
-}
-
-header .logoAccountScrolled {
-  background-color: #113229;
 }

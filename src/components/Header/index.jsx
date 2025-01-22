@@ -1,11 +1,20 @@
 import React, { useState, useEffect } from "react"
 import "./header.css"
-import whiteLogo from "../../assets/clearLogo.svg"
-import blackLogo from "../../assets/darkLogo.svg"
-import darkAccount from "../../assets/darkAccount.svg"
-import clearAccount from "../../assets/clearAccount.svg"
 
-export default function Header() {
+export default function Header({
+  backgroundHeaderDefault,
+  backgroundHeaderScroll,
+  linkColorDefault,
+  linkColorScoll,
+  logoMottodefault,
+  logoMottoScroll,
+  subscribeBtnDefault,
+  subscribeBtnScroll,
+  logoAccountDefault,
+  logoAccountScroll,
+  backgroundAccountDefault,
+  backgroundAccountScroll,
+}) {
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
@@ -18,51 +27,74 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={`${isScrolled ? "headerScrolled" : ""}`}>
+    <header
+      style={{
+        backgroundColor: isScrolled
+          ? backgroundHeaderScroll
+          : backgroundHeaderDefault,
+      }}
+    >
       <div className="container">
-        <img src={isScrolled ? blackLogo : whiteLogo} alt="Logo Motto" />
+        <a href="/">
+          <img
+            src={isScrolled ? logoMottoScroll : logoMottodefault}
+            alt="Logo Motto"
+          />
+        </a>
+
         <div>
           <a
-            className={`link ${isScrolled ? "linkScrolled" : ""}`}
-            href="/"
-            onClick={(e) => e.preventDefault()}
+            className="link"
+            href="/services"
+            style={{ color: isScrolled ? linkColorScoll : linkColorDefault }}
           >
             SERVICES
           </a>
           <a
-            className={`link ${isScrolled ? "linkScrolled" : ""}`}
+            className="link"
             href="/"
             onClick={(e) => e.preventDefault()}
+            style={{ color: isScrolled ? linkColorScoll : linkColorDefault }}
           >
             E-BIKES
           </a>
           <a
-            className={`link ${isScrolled ? "linkScrolled" : ""}`}
+            className="link"
             href="/"
             onClick={(e) => e.preventDefault()}
+            style={{ color: isScrolled ? linkColorScoll : linkColorDefault }}
           >
             À PROPOS
           </a>
           <a
-            className={`link ${isScrolled ? "linkScrolled" : ""}`}
+            className="link"
             href="/"
             onClick={(e) => e.preventDefault()}
+            style={{ color: isScrolled ? linkColorScoll : linkColorDefault }}
           >
             BLOG
           </a>
         </div>
         <div className="btnHader">
           <button
-            className={`subscribeBtn 
-              ${isScrolled ? "subscribeBtnScrolled" : ""}`}
+            style={{
+              backgroundColor: isScrolled
+                ? subscribeBtnScroll
+                : subscribeBtnDefault,
+            }}
+            className="subscribeBtn"
           >
             S'ABONNER
           </button>
           <img
-            src={isScrolled ? clearAccount : darkAccount}
             alt="logo account"
-            className={`logoAccount 
-              ${isScrolled ? "logoAccountScrolled" : ""}`}
+            className="logoAccount"
+            src={isScrolled ? logoAccountScroll : logoAccountDefault}
+            style={{
+              backgroundColor: isScrolled
+                ? backgroundAccountScroll
+                : backgroundAccountDefault,
+            }}
           />
         </div>
       </div>
