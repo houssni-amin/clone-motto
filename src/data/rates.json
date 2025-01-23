@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "EVENING",
+    "picture": "https://cdn.sanity.io/images/j09u7mpp/production/4dc703f4450c0e530a132926956cd4f410fc74d8-11034x6138.png?w=1080&q=75&fit=clip&auto=format",
+    "infos": "Vélo seul • services en option",
+    "flex": "70€",
+    "indisponible": "NA",
+    "annuel": "65€",
+    "firstFin": "660€",
+    "mois": "60€",
+    "secondFin": "590€",
+    "disponibilite": "Disponible à Paris"
+  },
+  {
+    "id": 2,
+    "name": "AFTERNOON",
+    "picture": "https://cdn.sanity.io/images/j09u7mpp/production/526c88617e7470d95886b751e27d53562f136472-3792x2590.png?w=1920&q=75&fit=clip&auto=format",
+    "infos": "Vélo seul • services en option",
+    "flex": "89€",
+    "indisponible": "NA",
+    "annuel": "79€",
+    "firstFin": "NA",
+    "mois": "69€",
+    "secondFin": "NA",
+    "disponibilite": "Disponible à Paris"
+  },
+  {
+    "id": 3,
+    "name": "ANGELL",
+    "picture": "https://cdn.sanity.io/images/j09u7mpp/production/d44085166d8b1e21671814b0c4af7554bf8d475c-3584x2020.png?w=1080&q=75&fit=clip&auto=format",
+    "infos": "Vélo seul • services en option",
+    "flex": "119€",
+    "indisponible": "NA",
+    "annuel": "109€",
+    "firstFin": "1090€",
+    "mois": "89€",
+    "secondFin": "890€",
+    "disponibilite": "Disponible à Paris"
+  },
+  {
+    "id": 4,
+    "name": "TWO",
+    "picture": "https://cdn.sanity.io/images/j09u7mpp/production/a5614e043cd6f4a3d3e23d9a9d55ca57242c6809-11034x6076.png?w=1080&q=75&fit=clip&auto=format",
+    "infos": "Vélo, assurance casse et vol inclus",
+    "flex": "109€",
+    "indisponible": "NA",
+    "annuel": "89€",
+    "firstFin": "1499€",
+    "mois": "84€",
+    "secondFin": "1499€",
+    "disponibilite": "Disponible à Paris"
+  },
+  {
+    "id": 5,
+    "name": "ONE",
+    "picture": "https://cdn.sanity.io/images/j09u7mpp/production/64e4155229f30240e2c41b16dd7e5f16b18f01eb-11034x6076.png?w=1080&q=75&fit=clip&auto=format",
+    "infos": "Vélo, assurance casse et vol inclus",
+    "flex": "84€",
+    "indisponible": "NA",
+    "annuel": "74€",
+    "firstFin": "999€",
+    "mois": "69€",
+    "secondFin": "999€",
+    "disponibilite": "Disponible à Paris"
+  },
+  {
+    "id": 6,
+    "name": "CARGO",
+    "picture": "https://cdn.sanity.io/images/j09u7mpp/production/92f1abd230a285e25f99afd9ee13479657ac8e36-1249x724.png?w=1080&q=75&fit=clip&auto=format",
+    "infos": "Vélo seul • services en option",
+    "flex": "230€",
+    "indisponible": "NA",
+    "annuel": "190€",
+    "firstFin": "NA",
+    "mois": "180€",
+    "secondFin": "NA",
+    "disponibilite": "Disponible à Paris"
+  }
+]
