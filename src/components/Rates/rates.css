@@ -1,0 +1,112 @@
+.rateContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  min-width: 250px;
+}
+
+.first {
+  border: solid 1px rgb(228, 228, 228);
+  border-bottom: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first h4 {
+  font-size: 27px;
+  font-weight: 450;
+}
+.first img {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.first p {
+  font-size: 13px;
+  background-color: #eaf1ef;
+  color: #405b53;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+.second {
+  border: solid 1px rgb(235, 235, 235);
+  border-bottom: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.third {
+  border: solid 1px rgb(235, 235, 235);
+  border-bottom: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.fourth {
+  border: solid 1px rgb(235, 235, 235);
+  border-bottom: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.fifth {
+  border: solid 1px rgb(235, 235, 235);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+.fifth p {
+  font-size: 13px;
+  background-color: #ddf3ff;
+  color: #103228;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.flexOne,
+.annuelOne,
+.moisOne {
+  font-size: 24px;
+  color: #103228;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.flexTwo,
+.annuelTwo,
+.moisTwo,
+.rateContainer span {
+  font-size: 16px;
+  color: #103228;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
