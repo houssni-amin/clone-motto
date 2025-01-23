@@ -13,6 +13,7 @@ import servicesBottomLeft from "../../assets/servicesBottomLeft.avif"
 import tcheck from "../../assets/tcheck.svg"
 import included from "../../assets/included.svg"
 import notIncluded from "../../assets/notIncluded.svg"
+import app from "../../assets/app.avif"
 
 export default function Services() {
   return (
@@ -285,6 +286,34 @@ export default function Services() {
           vous sera facturée pour tout abonnement avec traceur GPS.
         </p>
         <button>JE M'ABONNE</button>
+      </div>
+
+      <div className="appContainer">
+        <img src={app} alt="Application Motto" className="app" />
+        <div>
+          <h2>
+            TOUJOURS
+            <br />
+            CONNECTÉ
+          </h2>
+          <div className="appContent">
+            <img src={included} alt="icon validé" />
+            <p>Géolocalisation de votre vélo</p>
+          </div>
+          <div className="appContent">
+            <img src={included} alt="icon validé" />
+            <p>Prise RDV réparation</p>
+          </div>
+          <div className="appContent">
+            <img src={included} alt="icon validé" />
+            <p>Statistiques</p>
+          </div>
+          <div className="appContent">
+            <img src={included} alt="icon validé" />
+            <p>Assistance</p>
+          </div>
+          <button>DÉCOUVRIR</button>
+        </div>
       </div>
     </main>
   )
