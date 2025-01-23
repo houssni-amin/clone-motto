@@ -64,7 +64,7 @@ export default function Home() {
       </div>
 
       <div className="orderContainer">
-        <h2>LA MEILLEURE MANIÈRE DE SE DEPLACER EN VILLE.</h2>
+        <h2>LA MEILLEURE MANIÈRE DE SE DÉPLACER EN VILLE.</h2>
         <div className="orderFlex">
           <div className="orderContent">
             <img src={un} alt="1" className="number" />
