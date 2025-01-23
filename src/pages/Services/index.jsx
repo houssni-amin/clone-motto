@@ -10,6 +10,9 @@ import modelCenter from "../../assets/modelCenter.svg"
 import modelRight from "../../assets/modelRight.svg"
 import servicestopRight from "../../assets/servicesTopRight.avif"
 import servicesBottomLeft from "../../assets/servicesBottomLeft.avif"
+import tcheck from "../../assets/tcheck.svg"
+import included from "../../assets/included.svg"
+import notIncluded from "../../assets/notIncluded.svg"
 
 export default function Services() {
   return (
@@ -150,6 +153,137 @@ export default function Services() {
             />
           ))}
         </div>
+        <button>JE M'ABONNE</button>
+      </div>
+
+      <div className="compareContainer">
+        <h2>COMPAREZ NOS OFFRES</h2>
+        <div className="bannerContainer">
+          <p className="title">INCLUS DANS TOUS NOS FORFAITS</p>
+          <div className="bannerContent">
+            <div className="banner">
+              <img src={tcheck} alt="icon validé" />
+              <p>Révision annuelle</p>
+            </div>
+            <div className="banner">
+              <img src={tcheck} alt="icon validé" />
+              <p>Application Motto dédiée</p>
+            </div>
+            <div className="banner">
+              <img src={tcheck} alt="icon validé" />
+              <p>Votre Vélo personnel</p>
+            </div>
+            <div className="banner">
+              <img src={tcheck} alt="icon validé" />
+              <p>SAV by Motto</p>
+            </div>
+          </div>
+        </div>
+        <div className="tableontainer">
+          <div className="tableInfos">
+            <div className="info">
+              <p>Assurance contre le vol</p>
+            </div>
+            <div>
+              <p className="info">
+                GPS & équipe de recherche <br />
+                en cas de vol
+              </p>
+            </div>
+            <div className="info">
+              <p>Réparation</p>
+            </div>
+            <div className="info">
+              <p>Tarif des réparation</p>
+            </div>
+          </div>
+
+          <div className="tableContent">
+            <div className="tableOne">
+              <p className="tableTitle">BASIC</p>
+              <p className="green">
+                <span className="price">+9€</span>/mois
+              </p>
+              <p>
+                Franchise de <br />
+                <span className="bold">500€</span>
+              </p>
+            </div>
+            <div className="tableTwo height">
+              <img src={notIncluded} alt="icon pas validé" />
+              <p>Non inclus</p>
+            </div>
+            <div className="tableThree height">
+              <p>Atelier Motto</p>
+            </div>
+            <div className="tableFour height">
+              <p>
+                <span className="bold">0% de réduction</span> <br />
+                Pas de déplacement
+              </p>
+            </div>
+          </div>
+
+          <div className="tableContent">
+            <div className="tableOne">
+              <p className="tableTitleEssentiel">PREMIUM</p>
+              <p className="green">
+                <span className="price">+29€</span>/mois
+              </p>
+              <p>
+                Franchise de <br />
+                <span className="bold">200€</span>
+              </p>
+            </div>
+            <div className="tableEssentielPremium height">
+              <img src={included} alt="icon validé" />
+              <p>Inclus*</p>
+            </div>
+            <div className="tableThree height">
+              <p>
+                Atelier Motto <br /> <span className="bold">& à domicile</span>
+              </p>
+            </div>
+            <div className="tableFour height">
+              <p>
+                <span className="bold">20% de réduction</span> <br />
+                Frais de déplacement de 20€
+              </p>
+            </div>
+          </div>
+
+          <div className="tableContent">
+            <div className="tableOne">
+              <p className="tableTitlePremium">PREMIUM</p>
+              <p className="green">
+                <span className="price">+49€</span>/mois
+              </p>
+              <p>
+                Franchise de <br />
+                <span className="bold">0€</span>
+              </p>
+            </div>
+            <div className="tableEssentielPremium height">
+              <img src={included} alt="icon validé" />
+              <p>Inclus*</p>
+            </div>
+            <div className="tableThree height">
+              <p>
+                Atelier Motto <br /> <span className="bold">& à domicile</span>
+              </p>
+            </div>
+            <div className="tableFour height">
+              <p>
+                <span className="bold">20% de réduction</span> <br />
+                Frais de déplacement de 0€
+              </p>
+            </div>
+          </div>
+        </div>
+        <p className="caution">
+          * une caution de 60€, 100% remboursée à la fin de votre engagement,
+          vous sera facturée pour tout abonnement avec traceur GPS.
+        </p>
         <button>JE M'ABONNE</button>
       </div>
     </main>

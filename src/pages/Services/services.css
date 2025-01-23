@@ -227,3 +227,189 @@
   margin-top: 40px;
   margin-bottom: 50px;
 }
+
+.compareContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.compareContainer h2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #103228;
+}
+
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #16614d;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.bannerContainer .title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.bannerContent {
+  display: flex;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.banner p {
+  margin-left: 5px;
+}
+
+.tableontainer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+}
+
+.tableContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px rgb(228, 228, 228);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.tableOne,
+.tableTwo,
+.tableThree,
+.tableFour,
+.tableEssentielPremium {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 260px;
+  min-height: 70px;
+}
+
+.tableOne {
+  border-bottom: solid 1px rgb(228, 228, 228);
+}
+
+.tableThree {
+  border-bottom: solid 1px rgb(228, 228, 228);
+  border-top: solid 1px rgb(228, 228, 228);
+}
+
+.tableTitle {
+  background-color: #ddf3ff;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.tableOne .price {
+  font-size: 25px;
+  font-weight: 500;
+}
+.tableOne .green {
+  color: #15614e;
+  margin-top: 5px;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.tableTwo {
+  color: #d0d6d4;
+}
+.tableTwo img,
+.tableEssentielPremium img {
+  width: 20px;
+  margin-top: 15px;
+}
+
+.tableTitleEssentiel {
+  background-color: #16604d;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.tableEssentiel {
+  color: black;
+}
+
+.tableTitlePremium {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.height {
+  height: 80px;
+}
+
+.tableInfos {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableInfos .info {
+  box-sizing: border-box;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  margin-right: 15px;
+  font-size: 15px;
+  color: #103228;
+  font-weight: 500;
+}
+.caution {
+  color: #103228;
+  margin-top: 50px;
+}
+
+.compareContainer button {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #103228;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
