@@ -5,7 +5,7 @@
   align-items: center;
   background-color: white;
   border-radius: 10px;
-  min-width: 250px;
+  min-width: 230px;
 }
 
 .first {
@@ -24,10 +24,9 @@
   font-weight: 450;
 }
 .first img {
-  height: 150px;
+  max-height: 130px;
   width: 100%;
   margin-bottom: 20px;
-  object-fit: cover;
 }
 .first p {
   font-size: 13px;
