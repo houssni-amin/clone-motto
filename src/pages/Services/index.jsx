@@ -48,7 +48,7 @@ export default function Services() {
         <h2>
           DES SERVICES PENSÉS
           <br />
-          POUR VOTRE TRANQUILITÉD'ESPRIT
+          POUR VOTRE TRANQUILITÉ D'ESPRIT
         </h2>
         <p>Disponibles pour tous nos modèles</p>
         <div className="modelsContainer">
