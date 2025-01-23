@@ -1,5 +1,7 @@
 import "./services.css"
 import Header from "../../components/Header"
+import Rates from "../../components/Rates"
+import rates from "../../data/rates.json"
 import blackLogo from "../../assets/darkLogo.svg"
 import whiteAccount from "../../assets/clearAccount.svg"
 import bikeTop from "../../assets/bikeTop.avif"
@@ -105,6 +107,50 @@ export default function Services() {
             <button>JE M'ABONNE</button>
           </div>
         </div>
+      </div>
+
+      <div className="ratesContainer">
+        <h2>COMPAREZ NOS TARIFS</h2>
+        <p className="title">Découvrez et comparez nos prix</p>
+        <div className="rates">
+          <div className="infos">
+            <div className="info">
+              <p className="gras">Durée d'engagement</p>
+              <p className="fin">Option d'achat</p>
+            </div>
+            <div className="border info">
+              <p className="gras">Flex</p>
+              <p className="fin">Rachat indisponible</p>
+            </div>
+            <div className="info">
+              <p className="gras">Annuel</p>
+              <p className="fin">Rachat en fin de contract</p>
+            </div>
+            <div className="border info">
+              <p className="gras">18 mois</p>
+              <p className="fin">Rachat en fin de contract</p>
+            </div>
+            <div className="info">
+              <p className="gras">Disponibilité</p>
+            </div>
+          </div>
+          {rates.map((rate) => (
+            <Rates
+              key={rate.id}
+              name={rate.name}
+              picture={rate.picture}
+              infos={rate.infos}
+              flex={rate.flex}
+              indisponible={rate.indisponible}
+              annuel={rate.annuel}
+              firstFin={rate.firstFin}
+              mois={rate.mois}
+              secondFin={rate.secondFin}
+              disponibilite={rate.disponibilite}
+            />
+          ))}
+        </div>
+        <button>JE M'ABONNE</button>
       </div>
     </main>
   )

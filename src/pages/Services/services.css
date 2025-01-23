@@ -158,3 +158,72 @@
   color: #113229;
   width: 145px;
 }
+
+.ratesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ratesContainer h2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #103228;
+  margin-bottom: 0;
+}
+.ratesContainer .title {
+  color: #103228;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.rates {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.rates .infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-right: 20px;
+}
+.info {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gras {
+  font-size: 20px;
+  color: #103228;
+  font-weight: 400;
+  margin: 0;
+}
+
+.fin {
+  font-size: 16px;
+  color: #103228;
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+
+.ratesContainer button {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #103228;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
